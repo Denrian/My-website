@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact melody - Web Developer" />
+  <meta name="keywords" content="contact, email, form, melody" />
+  <meta name="author" content="melody" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Melody</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="survey.html">Survey</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contact-container">
+    <h2>Contact Me</h2>
+    <p>Have a question or want to work together? Fill out the form below or email me directly at 
+      <a href="mailto:melody@example.com">melody@example.com</a>.</p>
+
+    <form id="contact-form" action="#" method="post">
+      <label for="name">Name:<span>*</span></label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:<span>*</span></label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" />
+
+      <label for="message">Message:<span>*</span></label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Melody. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

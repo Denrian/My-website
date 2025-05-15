@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Survey form by melody" />
+  <meta name="keywords" content="survey, feedback, form" />
+  <meta name="author" content="melody" />
+  <title>Survey</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    input[type="checkbox"]{
+      margin-left:5px;
+    }
+    textarea{
+      background-color:#fefefe;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar" style="background-color:#000;">
+      <h1 class="logo">Melody</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="survey.html">Survey</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="survey-container">
+    <h2>Tell Me About Yourself</h2>
+    <p>Please take a moment to fill out this short survey.</p>
+
+    <form id="survey-form" action="#" method="post">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required />
+
+      <label>Gender:</label>
+      <label><input type="radio" name="gender" value="Male" required /> Male</label>
+      <label><input type="radio" name="gender" value="Female" /> Female</label>
+
+      <label for="interests">Your Interests:</label>
+      <label><input type="checkbox" name="interests" value="Web Development" /> Web Development</label>
+      <label><input type="checkbox" name="interests" value="Mobile Apps" /> Mobile Apps</label>
+      <label><input type="checkbox" name="interests" value="Game Design" /> Game Design</label>
+      <label><input type="checkbox" name="interests" value="UI/UX" /> UI/UX</label>
+
+      <label for="experience">Experience Level:</label>
+      <select id="experience" name="experience" required>
+        <option value="">Choose Here</option>
+        <option value="Beginner">Beginner</option>
+        <option value="Intermediate">Intermediate</option>
+        <option value="Expert">Expert</option>
+      </select>
+
+      <label for="feedback">Additional Comments:</label>
+      <textarea id="feedback" name="feedback" rows="5"></textarea>
+
+      <button type="submit">Submit Survey</button>
+    </form>
+  </main>
+
+  <footer>
+    <p style="font-size: small;"&copy; 2025 Melody. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

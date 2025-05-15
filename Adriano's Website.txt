@@ -1,0 +1,29 @@
+Adriano's Website
+Welcome to my personal website which shows my website that is interactive with built using HTML,CSS and JavaScript. 
+
+(https://github.com/Denrian/My-website.git)
+
+Features contained
+-Responsive Multi-page layout with Home, about, Projects, contact and survey pages
+-A validation form with contact and survey pages for detailing information on reviews of website
+-Project cards with images hover overlays and view options as toggle
+-CSS rule styling with grid, animations, keyframes and labels having internal, external and inline
+-Integrated GitHub link for easy access
+
+Tools and Technologies
+-HTML5
+-CSS
+-JavaScript
+-GitHub Pages mainly for hosting
+ 
+Challenges and Solutions
+1.Problem: It was difficult to use inline, internal, and external CSS without making the code messy or affecting consistency.
+Solution: Applied external CSS for most styling, added internal CSS for unique section styling, and used inline CSS only for simple one-line overrides (like changing a background color).
+2.Problem: Achieving responsive 2-column (About page) and 3-column (Projects page) layouts that look good on both desktop and mobile.
+Solution: Used Flexbox for the About page and CSS Grid with auto-fit and minmax for the Projects page to ensure responsiveness. Tested layouts on different screen sizes to verify they stack correctly.
+3.Problem: greetUser() in the homepage didn’t run because it was called before the script was loaded.
+Solution: Moved the function call inside the DOMContentLoaded event listener to ensure the DOM and script were fully loaded before execution.
+
+
+
+

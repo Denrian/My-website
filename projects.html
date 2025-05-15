@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Adriano melody - view projects and work samples." />
+  <meta name="keywords" content="projects, portfolio, Adriano melody, web development" />
+  <meta name="author" content="adriano melody" />
+  <title>Projects | Adriano melody</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .project-card {
+      transition:transform 0.3s ease;
+    }
+    .project-card:hover{
+      transform:scale(1.03);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar" style="background-color:#111;">
+      <h1 class="logo">Melody</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="survey.html">Survey</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="projects-container">
+    <h2>My Projects</h2>
+    <section class="project-grid">
+      <article class="project-card">
+        <img src="images/website.jpg" alt="Project 1 Screenshot" />
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio website built with HTML, CSS, and JavaScript.</p>
+        <a href="#">View Project</a>
+      </article>
+
+      <article class="project-card">
+        <img src="images/app.jpg" alt="Project 2 Screenshot" />
+        <h3>Task Tracker App</h3>
+        <p>A task management tool using vanilla JavaScript and localStorage.</p>
+        <a href="#">View Project</a>
+      </article>
+
+      <article class="project-card">
+        <img src="images/data.jpg" alt="Project 3 Screenshot" />
+        <h3>Weather App</h3>
+        <p>Uses OpenWeatherMap API to show real-time weather updates.</p>
+        <a href="#">View Project</a>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Adriano melody All rights reserved.</p>
+  </footer>
+</body>
+</html>
